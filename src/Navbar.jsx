@@ -1,7 +1,6 @@
 import React from 'react';
-import { makeStyles,AppBar,Toolbar,Typography,Button,IconButton ,Hidden,Menu,MenuItem,Grid} from '@material-ui/core';
+import { makeStyles,AppBar,Toolbar,IconButton ,Hidden,Menu,MenuItem,Grid} from '@material-ui/core';
 import {NavLink} from "react-router-dom";
-import { MdMenu } from "react-icons/md";
 import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,7 +49,7 @@ export default function Navbar () {
                 <NavLink to="/Contact"activeClassName={classes.activecss} className={classes.navlink}>Contact</NavLink>
         </Hidden>
         <Hidden smUp >
-            <IconButton edge="start" className={classes.menuButton} color="black" aria-label="menu" className={classes.navmenu}>
+            <IconButton edge="start" className={classes.menuButton+" "+classes.navmenu} color="black" aria-label="menu">
                 <MenuIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
             </IconButton>
         </Hidden>
