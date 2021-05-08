@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     text:{height: '100vh',minHeight: '100%',textAlign:'center',paddingTop: '100px !important',[theme.breakpoints.down('xs')]: {textAlign:'center'}},
     navlink:{textDecoration:'none',color: '#100f3a !important'},
     activecss:{fontWeight: "bold",color: "#d5c455 !important"},
-    butabout:{backgroundColor: '#d5c455',color:'white !important',border: '1px solid #d5c455 !important',textAlign:'right'},
+    butabout:{backgroundColor: '#d5c455',color:'white !important',border: '1px solid #d5c455 !important',textAlign:'right',width:'100%'},
     col:{color: "#d5c455 !important",textTransform: 'uppercase',fontWeight: 700,fontSize: '14px',letterSpacing: '1px',lineHeight: 1.2,marginBottom:'20px'},
     name:{fontWeight: 700,color: '#222222 !important',fontSize: '80px',lineHeight: 1.2,[theme.breakpoints.down('xs')]: {fontSize:'50px'}},
     buthire:{backgroundColor: 'white !important',color:'#100f3a !important',border: '1px solid #d5c455 !important', '&:hover':{backgroundColor: '#d5c455 !important',color:'white',width:'100%'}},
