@@ -38,6 +38,11 @@ body {
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
-code {
+
+/* code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+} */
+
+.MuiLinearProgress-barColorPrimary {
+    background-color: #d5c455 !important;
 }
