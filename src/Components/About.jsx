@@ -7,7 +7,7 @@ import { FaCoffee,FaUserClock} from "react-icons/fa";
 import resume from './DivyaraniResume.pdf';
 const useStyles = makeStyles((theme) => ({
     title:{ color:'#222222',fontSize: '20px',},
-    about:{fontWeight:'600',color: '#222222',fontSize: '40px',textAlign:'center',padding:12,marginBottom: '40px',[theme.breakpoints.down('xs')]: {marginBottom: '10px'}},
+    about:{fontWeight:'600',color: '#222222',fontSize: '40px',textAlign:'center',padding:10,marginTop: '30px',marginBottom: '40px',[theme.breakpoints.down('xs')]: {marginBottom: '10px'}},
     root:{margin:'12px',textAlign:'center',padding:'40px 5px',zIndex: 0},
     leftpad:{paddingLeft:'40px !important',[theme.breakpoints.down('xs')]: {paddingLeft:'12px !important'},transition:' var(--transition)',},
       "@global": {
