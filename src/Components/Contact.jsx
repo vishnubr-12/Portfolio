@@ -26,7 +26,7 @@ const Contact = () => {
                 </Grid>
                 <Grid item md={6} sm={6} xs={12}  >
                     <Typography variant="h3" component="h3" gutterBottom className={classes.details}>Get In Touch</Typography >
-                    <Contactdetails/>
+                    <Contactdetails />
                 </Grid>
                 <Grid item md={6} sm={6} xs={12} >
                     <Typography variant="h3" component="h3" gutterBottom className={classes.details}>My Contact Details</Typography >
