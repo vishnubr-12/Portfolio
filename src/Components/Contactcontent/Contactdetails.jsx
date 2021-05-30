@@ -30,7 +30,7 @@ const YellowTextField = withStyles({
 const Contactdetails = () => {
     let history = useHistory();
     const classes = useStyles();
-    const [details,setDetails]=useState({Fname:'',Lname:'',email:'',subject:'',message:''});
+    const [details]=useState({Fname:'',Lname:'',email:'',subject:'',message:''});
     const [error, setError] = useState(false);
     let ValidationSchema=object().shape({
         Fname:string().matches(/^[A-Za-z ]*$/, 'Please enter valid name').required('This Field is required'),

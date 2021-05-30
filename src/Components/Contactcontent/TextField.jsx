@@ -2,7 +2,7 @@ import React from 'react';
 import {TextField,FormHelperText} from '@material-ui/core';
 import {getIn} from 'formik'
 
-export default function ({field,form,name,helperText,error,onChange,onBlur,displayErrorMessage=true,...otherProps})
+export default function Textfield({field,form,name,helperText,error,onChange,onBlur,displayErrorMessage=true,...otherProps})
 {
     const changeHandler = (event) =>
     {

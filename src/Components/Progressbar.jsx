@@ -31,7 +31,7 @@ function LinearProgressWithLabel(props) {
         return () => {
           clearInterval(timer);
         };
-      }, []);
+      }, [props.value]);
     const classes = useStyles();
   return (
     <div className={classes.pad}>
