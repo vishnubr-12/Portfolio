@@ -9,7 +9,7 @@ const Home = () => {
         <Hidden xsDown >
             <Text/>  
         </Hidden>
-        <Grid item md={6} sm={6} xs={12}>
+        <Grid item md={6} sm={6} xs={12} style={{paddingRight: '25px'}}>
             <Image/>
         </Grid>
         </Grid>

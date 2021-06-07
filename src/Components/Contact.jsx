@@ -33,7 +33,7 @@ const Contact = () => {
                     <Typography variant="h3" component="h3" gutterBottom className={classes.contlist}><FaMapMarkerAlt/><span className={classes.spantext}># 740 ,4th main,5th stage.2nd phase ,beml layout ,RR Nagar, Bangalore,Karanataka,India.</span></Typography >
                     <Typography variant="h3" component="h3" gutterBottom className={classes.contlist}><FaPhoneAlt/><span className={classes.spantext}>+91 9620570998</span></Typography >
                     <Typography variant="h3" component="h3" gutterBottom className={classes.contlist}><MdEmail/><span className={classes.spantext}>divyarajanikanth.m@gmail.com</span></Typography >
-                    <Typography variant="h3" component="h3" gutterBottom className={classes.contlist}><IoEarth/><span className={classes.spantext}>ggggggg</span></Typography >
+                    <Typography variant="h3" component="h3" gutterBottom className={classes.contlist}><IoEarth/><span className={classes.spantext}>https://divyarani.netlify.app</span></Typography >
                 </Grid>
             </Grid>
         </>

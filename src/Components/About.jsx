@@ -50,7 +50,7 @@ const About = () => {
     const classes = useStyles();
     return (
         <>
-            <Typography gutterBottom className={classes.about}>About Us</Typography >
+            <Typography gutterBottom className={classes.about}>About Me</Typography >
             <Grid container spacing={3} className={classes.bottom}>
                 <Grid item md={6} sm={6} xs={12}  >
                 <Grid container  className={classes.leftpad+" "+classes.selector}>

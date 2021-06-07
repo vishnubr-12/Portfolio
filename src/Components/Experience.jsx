@@ -18,42 +18,46 @@ const useStyles = makeStyles((theme) => ({
     pad:{padding:'30px 5px 30px 40px'},
     pad1:{padding:'30px 40px 30px 5px'},
     padtop:{paddingTop: 40},
-    root1:{margin:'12px',textAlign:'center',padding:'40px 5px',zIndex: 0}
+    padTop0:{paddingTop:0},
+    padBottom0:{paddingBottom:0},
+    root1:{margin:'12px',textAlign:'center',padding:'40px 5px',zIndex: 0,overflow: 'scroll','&:hover':{border:'2px solid #d5c455!important',}}
 }));
 const Experience = () => {
     const classes = useStyles();
-    const onHover=(texts)=>{
-        var msg = new SpeechSynthesisUtterance();
-        var voices = window.speechSynthesis.getVoices();
-        msg.voice = voices[10];
-        msg.voiceURI = "native";
-        msg.volume = 1;
-        msg.rate = 1;
-        msg.pitch = 0.8;
-        msg.text = texts
-        msg.lang = 'en-US';
-        speechSynthesis.speak(msg);
-    }
-    const onHoverLeave=()=>{
-        speechSynthesis.cancel();
-    }
+    // const onHover=(texts)=>{
+    //     var msg = new SpeechSynthesisUtterance();
+    //     var voices = window.speechSynthesis.getVoices();
+    //     msg.voice = voices[10];
+    //     msg.voiceURI = "native";
+    //     msg.volume = 1;
+    //     msg.rate = 1;
+    //     msg.pitch = 0.8;
+    //     msg.text = texts
+    //     msg.lang = 'en-US';
+    //     speechSynthesis.speak(msg);
+    // }
+    // const onHoverLeave=()=>{
+    //     speechSynthesis.cancel();
+    // }
     return (
         <>
             <Typography gutterBottom className={classes.expre}>Over  <span className={classes.num}>3</span> of Experience</Typography >
             <Grid container spacing={3} className={classes.bottom}>
                 <Grid item md={6} sm={6} xs={12}  >
                 <Typography gutterBottom className={classes.num+" "+classes.text}>Experience</Typography >
-            <Grid container className={classes.pad}>
+            <Grid container className={classes.pad+" "+classes.padBottom0}>
                 <Grid item md={12} sm={12} xs={12} >
-                    <Card className={classes.root}>
+                    <Card className={classes.root1}>
                             
-                            <div>
+                            {/* <div> */}
+                            <CardContent>
                             <Typography   gutterBottom><FcCalendar/> Apr/2012 - May/2014</Typography>
                             <Typography   gutterBottom> Web Developer</Typography>     
                             <Typography   gutterBottom>MagsoftCreatives</Typography>
                             <Typography   gutterBottom>Bangalore</Typography>
-                            </div>
-                            <div >
+                            </CardContent>
+                            {/* </div> */}
+{/*                             <div >
                                 <div className={classes.center} onMouseLeave ={onHoverLeave} onMouseEnter={()=>onHover('Achievements/Tasks     Front end UI Developer (Responsibilities)      RWD, Designing static web pages, design structure for web sites and design web page layout using Html, CSS, Boostrap, Jquery and Javascript        Using dream weaver to update and create new web pages   Website Urls     genousautomotive.com     hventreprises.com    scubeincrop.in and mlcestates.com')}>
                                 <div   style={{marginLeft:' -110px',}}>
                                 <Typography className={classes.font}  gutterBottom>Achievements/Tasks</Typography> 
@@ -73,27 +77,37 @@ const Experience = () => {
                                     </ul>
                                     </div>
                                 </div>
-                            </div>                                                
+                            </div>                                                 */}
                     </Card>
                 </Grid>
                 <Grid item md={12} sm={12} xs={12} >
-                    <Card className={classes.root}>
-                        <div>
+                    <Card className={classes.root1}>
+                        {/* <div> */}
+                        <CardContent>
                         <Typography className={classes.num}  gutterBottom><FcCalendar/> Jan/2020 - Present</Typography>
-                        <Typography className={classes.num}  gutterBottom> Web Developer</Typography>     
+                        <Typography className={classes.num}  gutterBottom> React JS Front End Developer</Typography>     
                         <Typography className={classes.num}  gutterBottom>Alopasoft</Typography>
-                        </div>
-                            <div >
+                        <Typography   gutterBottom>Bangalore</Typography>
+                        </CardContent>
+                        {/* </div> */}
+{/*                             <div >
                                 <div className={classes.center} onMouseLeave ={onHoverLeave} onMouseEnter={()=>onHover('Achievements/Tasks .    Front end UI Developer (Responsibilities).      RWD, Designing static web pages, design structure for web sites and design web page layout using Html, CSS, Material UI ,Javascript and Other 3rd party packages .      Using dream weaver to update and create new web pages   Website worked on.     Isage Myhope ,CMT')}>
-                                <div   style={{marginLeft:' -110px',}}>
+                                <div   style={{marginLeft:' -110px',overflow: 'scroll'}}>
                                 <Typography className={classes.font+" "+classes.padtop}  gutterBottom>Achievements/Tasks</Typography> 
-                                <Typography  gutterBottom>Web Developer (Responsibilities) </Typography> 
+                                <Typography  gutterBottom>React Js Front End Developer (Responsibilities) </Typography> 
                                     <ul>
-                                        <li>RWD, Designing static web pages, design structure for web sites and <br/> design web page layout using Html, CSS, Material UI ,Javascript  <br/> and Other 3rd party packages</li>
-                                        <li>Using dream weaver to update and create new web pages</li>
+                                        <li>RWD, Designing static  and dynamic web pages, design structure <br/> for web sites and design web page layout using <br/>Html, CSS, Material UI ,Javascript and Other 3rd party packages</li>
+                                        <li>working for Medical based  Client</li>
                                         <li>Website worked on
                                             <ul>
-                                                <li>Isage</li>
+                                                <li>Isage RX/DoseCheck 
+                                                    <ul>
+                                                        <li>Isage webpage used for diabetic patient from doctor to prescribe <br/>the insuline dose based on the weight and helath condition.</li>
+                                                        <li>Worked on new tasks related to isage</li>
+                                                        <li>Debugging Bugs</li>
+                                                        <li>....</li>
+                                                    </ul>
+                                                </li>
                                                 <li>Myhope</li>
                                                 <li>CMT</li>
                                                 <br/>
@@ -103,10 +117,18 @@ const Experience = () => {
                                     </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                     </Card>
                 </Grid>
                 </Grid>
+                <Grid item md={12} sm={12} xs={12} className={classes.pad+" "+classes.padTop0} >
+                <Typography gutterBottom className={classes.num+" "+classes.text}>Certificate</Typography >
+                    <Card className={classes.root1}>
+                        {/* <CardContent> */}
+                            <Typography className={classes.title} gutterBottom> React JS</Typography><br/>
+                            {/* </CardContent> */}
+                                </Card>
+                                </Grid>
                 </Grid>
                 <Grid item md={6} sm={6} xs={12}  >
                 <Typography gutterBottom className={classes.num+" "+classes.text}>Education</Typography >
@@ -121,26 +143,30 @@ const Experience = () => {
                     </Card>
                 </Grid>
                 <Grid item md={12} sm={12} xs={12} >
-                <Typography gutterBottom className={classes.num+" "+classes.text}>CERTIFICATE</Typography >
+                <Typography gutterBottom className={classes.num+" "+classes.text}> Personal Projects</Typography >
                     <Card className={classes.root1}>
                         <CardContent>
-                            <Typography className={classes.title} gutterBottom> React JS</Typography><br/>
-                            <Typography className={classes.title} gutterBottom> PERSONAL PROJECTS</Typography>
-                            <ul style={{listStyle:'none',color:'#d5c455'}}>
+                            {/* <Typography className={classes.title} gutterBottom> React JS</Typography><br/> */}
+                            <Typography className={classes.title} gutterBottom> Login page  using frontend and backend portal</Typography>
+                            <Typography className={classes.title} gutterBottom> Hooks BudgetCalculator</Typography>
+                            <Typography className={classes.title} gutterBottom> BudgetCalculator</Typography>
+                            <Typography className={classes.title} gutterBottom>  E-Commerce</Typography>
+                            <Typography className={classes.title} gutterBottom> Portfolio</Typography>
+                            {/* <ul style={{listStyle:'none',color:'#d5c455'}}>
                                         <li style={{marginLeft: '-30px',}}>Portfolio</li>
                                         <li >Video related</li>
                                         <li style={{paddingLeft:'25px'}}> BudgetCalculator</li>
                                         <li style={{paddingLeft:'73px'}}> Hooks BudgetCalculator</li>
                                         <li> E-Commerce </li>
+                                        <li style={{paddingLeft:'222px'}}>Login page  using frontend and backend portal</li>
                                         <li>........</li>
-                            </ul>
+                            </ul> */}
                         </CardContent>
                     </Card>
                 </Grid>
                 </Grid>
                 </Grid>
                 </Grid>
-            
         </>
     );
 }

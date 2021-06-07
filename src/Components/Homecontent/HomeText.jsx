@@ -12,8 +12,8 @@ const useStyles = makeStyles((theme) => ({
     buthire:{backgroundColor: 'white !important',color:'#100f3a !important',border: '1px solid #d5c455 !important',padding:7, '&:hover':{backgroundColor: '#d5c455 !important',color:'white'}},
     butgrid:{ marginTop: 0,marginBottom: '1rem'},
     pad:{padding:'20px 5px !important'},
-    textleft:{textAlign:'left !important',},
-    textright:{textAlign:'right !important',}
+    textleft:{textAlign:'left !important',[theme.breakpoints.down('xs')]: {textAlign:'center !important'}},
+    textright:{textAlign:'right !important',[theme.breakpoints.down('xs')]: {textAlign:'center !important'}}
 }))
 const HomeText = () => {
 

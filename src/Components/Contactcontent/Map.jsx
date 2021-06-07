@@ -13,13 +13,13 @@ export class MapContainer extends Component {
         <Map google={this.props.google}
             style={mapStyles}
           initialCenter={{
-            lat: 12.995480,
-            lng: 77.530880
+            lat: 12.907886,
+            lng: 77.520315
           }}
-          center={{lat: 12.995480,
-            lng: 77.530880}}>
-          <Marker position ={{lat: 12.995480,
-            lng: 77.530880}}/>
+          center={{lat: 12.907886,
+            lng: 77.520315}}>
+          <Marker position ={{lat: 12.907886,
+            lng: 77.520315}}/>
         </Map>
       )
     }
