@@ -62,7 +62,7 @@ const About = () => {
                             Happy Client
                             </Typography>
                             <div className={classes.number}>
-                            <CountUp end={1000} duration={4} separator=',' /> +</div>
+                            <CountUp end={10} duration={4} separator=',' /> +</div>
                         </CardContent>
                     </Card>
                 </Grid>

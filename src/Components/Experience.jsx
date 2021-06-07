@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles,Typography,Grid,Card,CardContent } from '@material-ui/core';
 import { FcCalendar} from "react-icons/fc";
 const useStyles = makeStyles((theme) => ({
-    expre:{ fontWeight: 600,color: '#222222',fontSize: '40px',textAlign:'center',paddingTop:10,marginTop: '30px',[theme.breakpoints.down('xs')]: {marginBottom: '10px'}},
+    expre:{ fontWeight: 600,color: '#222222',fontSize: '40px',textAlign:'center',paddingTop:10,marginTop: '30px',[theme.breakpoints.down('xs')]: {marginBottom: '10px',fontSize: '35px'}},
     //num:{color:'#d5c455!important'},
     text:{textAlign:'center',fontSize: 25},
     root:{margin:'12px',textAlign:'center',padding:'40px 5px',zIndex: 0,height:'250px',
@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     },
 },
     font:{fontSize: '20px !important',paddingTop: 20,},
-    pad:{padding:'30px 5px 30px 40px'},
-    pad1:{padding:'30px 40px 30px 5px'},
+    pad:{padding:'30px 5px 30px 40px',[theme.breakpoints.down('xs')]: {padding:'30px 20px 0px 20px'}},
+    pad1:{padding:'30px 40px 30px 5px',[theme.breakpoints.down('xs')]: {padding:'0px 20px 30px 20px'}},
     padtop:{paddingTop: 40},
     padTop0:{paddingTop:0},
     padBottom0:{paddingBottom:0},
