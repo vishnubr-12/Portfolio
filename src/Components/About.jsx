@@ -98,7 +98,7 @@ const About = () => {
                             Working Hours
                             </Typography>
                             <div className={classes.number}>
-                            <CountUp end={1000} duration={4} separator=','/> +</div>
+                            <CountUp end={5000} duration={4} separator=','/> +</div>
                         </CardContent>
                     </Card>
                 </Grid>

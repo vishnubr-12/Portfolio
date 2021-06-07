@@ -20,7 +20,7 @@ const HomeText = () => {
     const classes = useStyles();
     return (
         <Grid item md={6} sm={6} xs={12} className={classes.text}>
-            <Typography gutterBottom className={classes.name}>Howdy, I'm <br/>Divyarani M</Typography >
+            <Typography gutterBottom className={classes.name}>Divyarani M</Typography >
             <Typography  gutterBottom className={classes.col}>A Front-end Developer</Typography >
             <Grid container>
                 <Grid item md={6} sm={6} xs={12} className={classes.pad+" "+classes.textright}>
