@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 const download=()=>{
     const link = document.createElement('a');
     link.href = resume;
+    link.target='_blank'
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
